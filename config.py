@@ -37,15 +37,20 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_PIC = os.environ.get("START_PIC","https://envs.sh/g3h.jpg")
-START_MSG = os.environ.get("START_MESSAGE", "✨ Welcome to Asha - Your Trusted File Sharing Assistant! ✨\n\nHi {mention}! 👋\n\nI'm Asha, your personal file-sharing bot. With me, you can:
-📤 Upload files instantly.
-📥 Download and access shared files.
-🔗 Generate secure links for easy sharing.
-📂 Organize and manage your uploads effortlessly.
+START_MSG = os.environ.get(
+    "START_MESSAGE",
+    "✨ Welcome to Asha - Your Trusted File Sharing Assistant! ✨\n\n"
+    "Hi {mention}! 👋\n\n"
+    "I'm Asha, your personal file-sharing bot. With me, you can:\n"
+    "📤 Upload files instantly.\n"
+    "📥 Download and access shared files.\n"
+    "🔗 Generate secure links for easy sharing.\n"
+    "📂 Organize and manage your uploads effortlessly.\n\n"
+    "Commands at a Glance:\n"
+    "🆔 Your User ID: {id}\n"
+    "👤 Username: {username}"
+)
 
-Commands at a Glance:
-🆔 Your User ID: {id}
-👤 Username: {username}")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6283322330").split()):
