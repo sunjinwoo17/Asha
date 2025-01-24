@@ -82,3 +82,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
    
+# Auto delete time in seconds (default: 180 seconds or 3 minutes)
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "180"))
+
+# Optional: Success message auto-deletion time in seconds
+AUTO_DEL_SUCCESS_MSG = int(os.getenv("AUTO_DEL_SUCCESS_MSG", "15"))
