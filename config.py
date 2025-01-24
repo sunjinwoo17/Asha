@@ -87,3 +87,5 @@ AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "180"))
 
 # Optional: Success message auto-deletion time in seconds
 AUTO_DEL_SUCCESS_MSG = int(os.getenv("AUTO_DEL_SUCCESS_MSG", "15"))
+# URL of the start message picture (optional)
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/HmX.jpg")
